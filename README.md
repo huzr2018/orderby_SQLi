@@ -1,4 +1,4 @@
-Kohana/koseven allows SQL Injection via the order_by() parameter. 
+Kohana/koseven 3.3.x has SQL Injection when the order_by() parameter can be controlled. 
    
    
 In some website, developers use dynamic sort operation like Member.php    
