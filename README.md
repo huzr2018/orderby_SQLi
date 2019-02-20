@@ -1,7 +1,7 @@
-Kohana/koseven allows SQL Injection via the order_by parameter. 
+Kohana/koseven allows SQL Injection via the order_by() parameter. 
    
    
-1. In some website, developers use dynamic sort operation like this   
+In some website, developers use dynamic sort operation like this   
 ```
 http://x.com?order_by=desc
 ```   
@@ -14,8 +14,8 @@ information_schema.columns where table_name like 'xxx'),1,30) )))
 or other way like:   
 http://www.securityidiots.com/Web-Pentest/SQL-Injection/group-by-and-order-by-sql-injection.html  
     
-2. If we don't remind developers the potential risks of using untrusted input at order_by ,sql injection may occur.   
+If we don't remind developers the potential risks of using untrusted input at order_by ,sql injection may occur.   
         
-3. developers may think the instructions are safe and sure of security. Most of them think the use of orm is 100% guard against sql injection.   
+developers may think the instructions are safe and sure of security. Most of them think the use of orm is 100% guard against sql injection.   
    
-4. So can we add a fun like 'order_by_safe' which receive field only in models.   
+So can we add a fun like 'order_by_safe' which receive field only in models.   
