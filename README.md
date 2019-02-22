@@ -1,6 +1,6 @@
 ### Kohana   
-[kohana](./kohana/README.md)
+[kohana](./kohana/)
    
 ### Gorose   
-[gorose](./gorose/README.md)
+[gorose](./gorose/)
    
